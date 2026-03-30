@@ -14,6 +14,11 @@ const Contato = () => {
           </div>
 
           <div className="campo">
+            <label htmlFor="campo">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite o seu telefone" />
+          </div>
+
+          <div className="campo">
             <label htmlFor="email">E-mail</label>
             <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
           </div>
@@ -29,12 +34,7 @@ const Contato = () => {
 
           <div className="campo">
             <label htmlFor="motivo">Motivo do contato</label>
-            <textarea
-              id="motivo"
-              name="motivo"
-              rows="5"
-              placeholder="Escreva o motivo do seu contato"
-            ></textarea>
+            <input type="text" id="motivo" name="motivo" placeholder="Digite o motivo do seu contato" />
           </div>
 
           <div className="botoes">
