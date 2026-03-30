@@ -1,12 +1,14 @@
 :root {
-    --bgColor1:#CFE5FF;
-    --bgColor2:#7C1034;
-    --bgColor3: #252F9C;
-    --bgColor4: #F5F5EB;
+  --bgColor1: #CFE5FF;
+  --bgColor2: #7C1034;
+  --bgColor3: #252F9C;
+  --bgColor4: #F5F5EB;
 }
 
-body{
-    background: var(--bgColor4);
+body {
+  background: var(--bgColor4);
+  margin: 0;
+  padding: 0;
 }
 
 .container{

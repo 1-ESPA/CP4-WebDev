@@ -1,16 +1,25 @@
-import {Link} from 'react-router-dom'
-import '../css/menu.css'
+import { NavLink } from 'react-router-dom'
 import '../css/global.css'
+import '../css/menu.css'
+import logo from '../assets/logo.png'
 
 const Menu = () => {
   return (
-    <section className= "Nav">
-        <Link to="/">Home</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/calculadora">Calculadora</Link>
-        <Link to="/plano">Planos</Link>
-        <Link to="/contato">Contato</Link>
-    </section>
+    <header className="menu">
+      <div className="menu-container">
+        <div className="esquerda">
+          <img src={logo} alt="logo" className="logo" />
+        </div>
+
+        <nav className="direita">
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/sobre">Sobre</NavLink>
+          <NavLink to="/calculadora">Calculadora</NavLink>
+          <NavLink to="/plano">Planos</NavLink>
+          <NavLink to="/contato">Contato</NavLink>
+        </nav>
+      </div>
+    </header>
   )
 }
 

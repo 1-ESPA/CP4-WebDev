@@ -1,0 +1,75 @@
+.menu {
+  width: 100%;
+  background-color: var(--bgColor2);
+  padding: 18px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.direita {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.direita a {
+  text-decoration: none;
+  color: var(--bgColor4);
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.direita a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.direita a.active {
+  background-color: var(--bgColor3);
+  color: var(--bgColor1);
+}
+
+@media (max-width: 900px) {
+  .menu-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .direita {
+    justify-content: center;
+  }
+
+  .direita a {
+    font-size: 17px;
+    padding: 10px 16px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
