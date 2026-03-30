@@ -6,28 +6,27 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+
         <div className="footer-info">
-          <h4>Contato</h4>
-
-          <p>
+          <div className="footer-item">
             <BsEnvelope className="footer-icon" />
-            glowgym@gmail.com
-          </p>
+            <p>glowgym@gmail.com</p>
+          </div>
 
-          <p>
+          <div className="footer-item">
             <BsWhatsapp className="footer-icon" />
-            (11) 99999-9999
-          </p>
+            <p>(11) 99999-9999</p>
+          </div>
 
-          <p>
+          <div className="footer-item">
             <BsInstagram className="footer-icon" />
-            @glowgym
-          </p>
+            <p>@glowgym</p>
+          </div>
 
-          <p>
+          <div className="footer-item">
             <BsGeoAlt className="footer-icon" />
-            Av. Paulista, 1000 - São Paulo, SP
-          </p>
+            <p>Av. Paulista, 1000 - São Paulo, SP</p>
+          </div>
         </div>
 
         <h6>&copy; 2026 - direitos reservados</h6>
