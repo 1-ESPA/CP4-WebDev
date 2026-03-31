@@ -1,0 +1,36 @@
+.erro {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.erro-box {
+  background-color: var(--bgColor3);
+  color: var(--bgColor4);
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 30px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.erro-box h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: var(--bgColor1);
+}
+
+.erro-box h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.erro-box p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
