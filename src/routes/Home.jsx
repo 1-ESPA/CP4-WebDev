@@ -1,9 +1,13 @@
+import Modalidades from "../components/Modalidades"
+
 const Home = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+
+    return(
+        <>
+            <Modalidades/>
+        </>
+    )
+
 }
 
 export default Home
