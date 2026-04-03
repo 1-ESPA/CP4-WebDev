@@ -1,6 +1,6 @@
 .hero {
-    background-color: #7C1034;
-    color: white;
+    background-color: #CFE5FF;
+    color: #7C1034;
     padding: 100px 60px;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
 
 .hero-btn {
     display: inline-block;
-    background-color: #252F9C;
+    background-color: #7C1034;
     color: white;
     padding: 16px 36px;
     border-radius: 50px;
