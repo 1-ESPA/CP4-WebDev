@@ -1,48 +1,61 @@
-.modalidades{
-    text-align: center;
-    padding: 60px;
+.modalidades {
+  text-align: center;
+  padding: 60px;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.card{
-    width: 220px;
-    height: 150px;
-    padding: 20px;
-    border-radius: 12px;
-    background: #FDFBF0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
-    transition: all 0.3s ease;
-    overflow: hidden;
+.card {
+  width: 220px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #FDFBF0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.card h3{
-    margin-top: 40px;
-    transition: 0.3s;
+.card h3 {
+  transition: opacity 0.3s, transform 0.3s;
 }
 
-.card p{
-    opacity: 0;
-    font-size: 14px;
-    transition: 0.3s;
+.card-icon {
+  font-size: 28px;
+  margin: 8px auto 0;
+  color: #000000;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
-.card:hover{
-    background-color: #252F9C;
-    color: white;
-    transform: translateY(-8px);
+.card p {
+  opacity: 0;
+  font-size: 14px;
+  position: absolute;
+  padding: 0 20px;
+  transition: opacity 0.3s;
 }
 
-.card:hover p{
-    opacity: 1;
+.card:hover {
+  background-color: #252F9C;
+  color: white;
+  transform: translateY(-8px);
 }
 
-.card:hover h3{
-    margin-top: 10px;
+.card:hover .card-icon {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.card:hover p {
+  opacity: 1;
+  position: static;
 }
