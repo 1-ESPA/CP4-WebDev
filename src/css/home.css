@@ -1,0 +1,52 @@
+.info {
+    padding: 60px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.info h2 {
+    margin-bottom: 32px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info li:last-child {
+    border-bottom: none;
+}
+
+.info-icon {
+    font-size: 20px;
+    color: #7B0D2E;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info strong {
+    font-size: 15px;
+}
+
+.info span {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
