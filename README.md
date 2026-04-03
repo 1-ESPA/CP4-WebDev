@@ -1,16 +1,129 @@
-# React + Vite
+# Glow Gym
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **CHECKPOINT 4**
+> **Curso:** Engenharia de Software
+> **Disciplina:** Web Development
+> **Professor:** Wellington Cidade Silva
+> **Turma:** 1ESPA
 
-Currently, two official plugins are available:
+Site da academia **Glow Gym**, desenvolvido como projeto acadêmico utilizando React + Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Equipe de Desenvolvimento
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| RM | Nome |
+|----|------|
+| RM 567947 | Lara Mofid Essa Alssabak |
+| RM 567355 | Maria Luisa Boucinhas Franco |
+| RM 567825 | Roberta Moreira dos Santos |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Links
+
+- **Repositório:** [github.com/1-ESPA/CP4-WebDev.git](https://github.com/1-ESPA/CP4-WebDev.git)
+- **GitHub Pages:** 
+
+---
+
+## Sobre o projeto
+
+O site apresenta as informações da academia Glow Gym, incluindo modalidades oferecidas, planos disponíveis, depoimentos de alunos e informações de contato.
+
+---
+
+## Estrutura de pastas
+
+```
+src/
+├── assets/          # Imagens e recursos estáticos
+├── components/      # Componentes reutilizáveis
+│   ├── Depoimentos.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── Menu.jsx
+│   ├── Modalidades.jsx
+│   └── Resultado.jsx
+├── css/             # Arquivos de estilo
+│   ├── contato.css
+│   ├── depoimentos.css
+│   ├── error.css
+│   ├── estilo.css
+│   ├── footer.css
+│   ├── global.css
+│   ├── header.css
+│   ├── hero.css
+│   ├── home.css
+│   ├── menu.css
+│   ├── modalidades.css
+│   ├── plano.css
+│   └── resultado.css
+├── routes/          # Páginas da aplicação
+│   ├── Calculadora.jsx
+│   ├── Contato.jsx
+│   ├── Error.jsx
+│   ├── Home.jsx
+│   ├── Plano.jsx
+│   └── Sobre.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+---
+
+## Páginas
+
+| Rota | Descrição |
+|------|-----------|
+| `/` | Home com Hero, Modalidades, Depoimentos e CTA |
+| `/sobre` | Página sobre a academia |
+| `/plano` | Planos e preços |
+| `/calculadora` | Calculadora de IMC |
+| `/contato` | Formulário de contato |
+
+---
+
+## Tecnologias utilizadas
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## Como rodar o projeto
+
+**1. Clone o repositório**
+```bash
+git clone https://github.com/seu-usuario/glow-gym.git
+```
+
+**2. Instale as dependências**
+```bash
+npm install
+```
+
+**3. Rode o servidor de desenvolvimento**
+```bash
+npm run dev
+```
+
+**4. Acesse no navegador**
+```
+http://localhost:5173
+```
+
+---
+
+## Identidade visual
+
+| Cor | Hex |
+|-----|-----|
+| Vinho (primária) | `#7B0D2E` |
+| Azul (secundária) | `#252F9C` |
+| Fundo claro | `#FDFBF0` |
+
