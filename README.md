@@ -46,20 +46,19 @@ src/
 │   ├── Menu.jsx
 │   ├── Modalidades.jsx
 │   └── Resultado.jsx
-├── css/             # Arquivos de estilo
+├── css/         # Arquivos de estilo
 │   ├── contato.css
 │   ├── depoimentos.css
 │   ├── error.css
-│   ├── estilo.css
 │   ├── footer.css
 │   ├── global.css
-│   ├── header.css
 │   ├── hero.css
 │   ├── home.css
 │   ├── menu.css
 │   ├── modalidades.css
 │   ├── plano.css
 │   └── resultado.css
+│   └── sobre.css
 ├── routes/          # Páginas da aplicação
 │   ├── Calculadora.jsx
 │   ├── Contato.jsx
