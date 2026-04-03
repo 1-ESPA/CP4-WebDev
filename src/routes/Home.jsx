@@ -2,6 +2,7 @@ import Modalidades from "../components/Modalidades"
 import Hero from "../components/Hero"
 import Depoimentos from "../components/Depoimentos"
 import { FaMapMarkerAlt, FaClock, FaStar } from "react-icons/fa"
+import { Link } from 'react-router-dom'
 import '../css/home.css'
 
 const Home = () => {
@@ -42,7 +43,7 @@ const Home = () => {
 
         <section className="cta">
             <h2>Pronto para começar?</h2>
-            <a href="#contato" className="cta-btn">Quero me matricular</a>
+            <Link to="/plano" className="cta-btn">Quero me matricular</Link>
         </section>
         </>
     )
