@@ -23,7 +23,6 @@ Site da academia **Glow Gym**, desenvolvido como projeto acadêmico utilizando R
 ## Links
 
 - **Repositório:** [github.com/1-ESPA/CP4-WebDev.git](https://github.com/1-ESPA/CP4-WebDev.git)
-- **GitHub Pages:** 
 
 ---
 
