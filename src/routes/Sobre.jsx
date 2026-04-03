@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import '../css/global.css'
 import '../css/sobre.css'
 
 const Sobre = () => {
+  const [abaAtiva, setAbaAtiva] = useState('treinos')
+
   return (
     <main className="sobre">
       <section className="sobre-hero">
@@ -28,30 +31,62 @@ const Sobre = () => {
       <section className="sobre-diferenciais">
         <h2>Nossos diferenciais</h2>
 
-        <div className="cards-diferenciais">
-          <article className="card">
-            <h3>Treinos personalizados</h3>
-            <p>
-              Cada aluno recebe atenção especial para alcançar seus objetivos de
-              forma segura e eficiente.
-            </p>
-          </article>
+        <div className="abas-diferenciais">
+          <button
+            className={abaAtiva === 'treinos' ? 'aba ativa' : 'aba'}
+            onClick={() => setAbaAtiva('treinos')}
+          >
+            Treinos personalizados
+          </button>
 
-          <article className="card">
-            <h3>Equipe qualificada</h3>
-            <p>
-              Contamos com profissionais preparados para orientar, acompanhar e
-              motivar durante toda a jornada.
-            </p>
-          </article>
+          <button
+            className={abaAtiva === 'equipe' ? 'aba ativa' : 'aba'}
+            onClick={() => setAbaAtiva('equipe')}
+          >
+            Equipe qualificada
+          </button>
 
-          <article className="card">
-            <h3>Ambiente motivador</h3>
-            <p>
-              Nossa estrutura foi pensada para tornar os treinos mais
-              confortáveis, dinâmicos e inspiradores.
-            </p>
-          </article>
+          <button
+            className={abaAtiva === 'ambiente' ? 'aba ativa' : 'aba'}
+            onClick={() => setAbaAtiva('ambiente')}
+          >
+            Ambiente motivador
+          </button>
+        </div>
+
+        <div className="conteudo-aba">
+          {abaAtiva === 'treinos' && (
+            <>
+              <h3>Treinos personalizados</h3>
+              <p>
+                Cada aluno recebe atenção especial para alcançar seus objetivos
+                de forma segura e eficiente, com orientação pensada de acordo
+                com seu ritmo, sua meta e sua evolução.
+              </p>
+            </>
+          )}
+
+          {abaAtiva === 'equipe' && (
+            <>
+              <h3>Equipe qualificada</h3>
+              <p>
+                Contamos com profissionais preparados para orientar, acompanhar
+                e motivar durante toda a jornada, oferecendo suporte e atenção
+                em cada etapa do treino.
+              </p>
+            </>
+          )}
+
+          {abaAtiva === 'ambiente' && (
+            <>
+              <h3>Ambiente motivador</h3>
+              <p>
+                Nossa estrutura foi pensada para tornar os treinos mais
+                confortáveis, dinâmicos e inspiradores, criando um espaço
+                acolhedor para manter a disciplina e a motivação.
+              </p>
+            </>
+          )}
         </div>
       </section>
 
