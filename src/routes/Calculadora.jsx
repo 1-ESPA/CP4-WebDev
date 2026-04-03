@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import Resultado from '../components/Resultado'
 import '../css/global.css'
-import '../css/estilo.css'
+import '../css/calculadora.css'
 
 
 function App() {
